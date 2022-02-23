@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components'
 
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import Catalogue from './pages/Catalogue'
 
 const theme = {
   primary: "#184A2C",
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path='signup' element={<Signup/>}/>
+          <Route path='catalogue' element={<Catalogue/>}/>
         </Routes>
       </Router>
     </ThemeProvider>
